@@ -1,17 +1,15 @@
 from django.contrib import messages
 from django.db import IntegrityError
 from django.shortcuts import render, redirect
-
+from django.template.context_processors import media
 from app.models import ProviderDetails
 
-
+#main phase
 def main(request):
     return render(request, 'main/main.html')
 
-
 def provider_login(request):
     return render(request, 'main/provider_login.html')
-
 
 def provider_login_check(request):
     email = request.POST.get('email')
@@ -19,7 +17,7 @@ def provider_login_check(request):
     try:
         provider = ProviderDetails.objects.get(email=email)
         if email == provider.email and password == provider.password:
-            return render(request, 'provider/provider_home.html')
+            return render(request, 'provider/provider_home.html',{'provider':provider})
         elif email != provider.email:
             messages.error(request, 'Invalid Username')
             return redirect('provider_login')
@@ -35,10 +33,8 @@ def provider_login_check(request):
         messages.error(request, de)
         return redirect('provider_login')
 
-
 def provider_registration(request):
     return render(request, 'main/provider_registration.html')
-
 
 def provider_registration_save(request):
     fname = request.POST.get('fname')
@@ -66,3 +62,14 @@ def provider_registration_save(request):
         messages.error(request, "Password did'nt match")
         return redirect('provider_registration')
 
+#provider phase
+def provider_profile(request):
+    email = request.GET.get('email')
+    provider = ProviderDetails.objects.get(email=email)
+    return render(request,'provider/provider_profile.html',{'provider':provider})
+
+
+def provider_home(request):
+    email = request.GET.get('email')
+    provider = ProviderDetails.objects.get(email=email)
+    return render(request, 'provider/provider_home.html', {'provider': provider})

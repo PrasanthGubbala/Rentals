@@ -1,0 +1,18 @@
+{% extends 'main/common.html' %}
+{% block common %}
+{% include 'provider/provider_menu.html' %}
+<br>
+    <table align="center" border="0">
+        <tr><th colspan="2" style="font-size: 20px;color: blue;text-align: center;padding: 10px">Provider Details</th></tr>
+        <tr>
+            <th><img src="{{ provider.photo.url }}"></th>
+            <th style="padding: 20px;color: deepskyblue">
+                {{ provider.first_name|capfirst }} {{ provider.last_name|capfirst }}<br>
+                {{ provider.address|capfirst }}<br>
+                {{ provider.email }}<br>
+                {{ provider.contact }}
+            </th>
+        </tr>
+    </table>
+
+{% endblock %}

@@ -22,11 +22,16 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
+    #main phase
     path('',views.main,name='main'),
     path('provider_login/',views.provider_login,name='provider_login'),
     path('provider_login_check/',views.provider_login_check,name='provider_login_check'),
     path('provider_registration/',views.provider_registration,name='provider_registration'),
     path('provider_registration_save/',views.provider_registration_save,name='provider_registration_save'),
+
+    #provider phase
+    path('provider_profile/',views.provider_profile,name='provider_profile'),
+    path('provider_home/',views.provider_home,name='provider_home')
 
 ]
 

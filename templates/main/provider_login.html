@@ -1,6 +1,7 @@
 {% extends 'main/common.html' %}
 {% block common %}
     {% load static %}
+    {% include 'main/main_menu.html' %}
     <br><br>
     <form action="{% url 'provider_login_check' %}" method="post">
     {% csrf_token %}

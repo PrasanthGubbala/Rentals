@@ -11,3 +11,5 @@ class ProviderDetails(models.Model):
     photo = models.ImageField(upload_to='provider_photo')
 
 
+class Services(models.Model):
+    pass

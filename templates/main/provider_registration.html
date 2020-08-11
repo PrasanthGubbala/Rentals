@@ -1,6 +1,7 @@
 {% extends 'main/common.html' %}
 {% block common %}
     {% load static %}
+    {% include 'main/main_menu.html' %}
     <form action="{% url 'provider_registration_save' %}" method="post" enctype="multipart/form-data">
     {% csrf_token %}
         <table align="center" border="1">
