@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.db import IntegrityError
 from django.shortcuts import render, redirect
 from django.template.context_processors import media
-from app.models import ProviderDetails
+from app.models import ProviderDetails,Services
 
 #main phase
 def main(request):
@@ -46,8 +46,6 @@ def provider_registration_save(request):
     password = request.POST.get('password')
     password2 = request.POST.get('password2')
     photo = request.FILES['photo']
-
-    print(photo)
     if password == password2:
         try:
             ProviderDetails(first_name=fname, last_name=lname, gender=gender, contact=contact, address=address,
@@ -73,3 +71,23 @@ def provider_home(request):
     email = request.GET.get('email')
     provider = ProviderDetails.objects.get(email=email)
     return render(request, 'provider/provider_home.html', {'provider': provider})
+
+def add_service(request):
+    email = request.GET.get('email')
+    provider = ProviderDetails.objects.get(email=email)
+    return render(request, 'provider/add_service.html', {'provider': provider})
+
+def save_service(request):
+    service_type = request.POST.get('service_type')
+    rooms = request.POST.get('rooms')
+    square_feets = request.POST.get('square_feets')
+    price = request.POST.get('price')
+    city = request.POST.get('city')
+    area = request.POST.get('area')
+    street = request.POST.get('street')
+    door_no = request.POST.get('door_no')
+    image = request.FILES['image']
+    Services(service_type=service_type,rooms=rooms,square_feets=square_feets,price=price,city=city,
+             area=area,street=street,door_no=door_no,image=image).save()
+    messages.success(request,'House Details Are Uploaded Successfully')
+    return redirect('provider_home')

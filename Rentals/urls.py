@@ -31,7 +31,9 @@ urlpatterns = [
 
     #provider phase
     path('provider_profile/',views.provider_profile,name='provider_profile'),
-    path('provider_home/',views.provider_home,name='provider_home')
+    path('provider_home/',views.provider_home,name='provider_home'),
+    path('add_service/',views.add_service,name='add_service'),
+    path('save_service/',views.save_service,name='save_service'),
 
 ]
 
