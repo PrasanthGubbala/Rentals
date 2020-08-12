@@ -1,0 +1,38 @@
+{% extends 'main/common.html' %}
+{% block common %}
+{% include 'provider/provider_menu.html' %}
+<br><br>
+    <form action="{% url 'save_service' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table align="center" border="1">
+    <tr><th style="text-align: center;font-size: 25px;color: blue;padding: 10px">Add Your Rent-Based House</th></tr>
+
+    <tr>
+        <th>
+            <select name="service_type" required >
+                <option value="room">Room</option>
+                <option value="flat">Flat</option>
+                <option value="house">Fouse</option>
+                <option value="villa">Villa</option>
+                <option value="duplex">Duplex</option>
+                <option value="shops">Shops</option>
+                <option value="school">Schools</option>
+                <option value="office">Office</option>
+            </select>
+        </th>
+    </tr>
+    <tr><th><input type="number" name="rooms" placeholder="No Of Rooms" required min="1"></th></tr>
+    <tr><th><input type="number" name="square_feets" placeholder="Square Feets ie;total area" required min="1"></th></tr>
+    <tr><th><input type="number" name="price" placeholder="price ie;indian rupees" required min="1000"></th></tr>
+    <tr><th>
+        House Located Address:<br>
+        <input type="text" name="city" placeholder="City" required>
+    </th></tr>
+    <tr><th><input type="text" name="area" placeholder="Area ie;local place" required></th></tr>
+    <tr><th><input type="text" name="street" placeholder="Street" required></th></tr>
+    <tr><th><input type="text" name="door_no" placeholder="Door-number" required></th></tr>
+    <tr><th><input type="file" name="image" placeholder="Upload Your House Image" required></th></tr>
+    <tr><th><button type="submit">Add House</button> </th></tr>
+    </table>
+    </form>
+{% endblock %}
