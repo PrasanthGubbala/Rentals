@@ -1,0 +1,38 @@
+{% extends 'main/common.html' %}
+{% block common %}
+{% include 'provider/provider_menu.html' %}
+    {% load static %}
+<br>
+
+    <h1 style="text-align: center;font-size: 30px;color: blue">All Uploaded Services From You</h1>
+
+    <table>
+        <tr>
+            {% for x in services %}
+                <th>
+                    <a href="#">
+                        <div class="card" style="width: 18rem;">
+                          <img src="{{ x.image.url }}" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">₹:{{ x.price }}</h5>
+                              <span>Type:{{ x.service_type }}</span><br>
+                              <span>Beds:{{ x.rooms }}, sq.f:{{ x.square_feets }}</span><br>
+                            <span>{{ x.city }},{{ x.area }},{{ x.street }},{{ x.door_no }}</span><br>
+                            <span>{{ x.email }}</span>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </a>
+                </th>
+            {% endfor %}
+        </tr>
+    </table>
+
+
+    {% if messages %}
+        {% for message in messages %}
+            <h3 style="text-align: center;background: green;color: white">{{ message }}</h3>
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'main/common.html' %}
+{% block common %}
+{% include 'consumer/consumer_menu.html' %}
+<br>
+    <table align="center" border="0">
+        <tr><th colspan="2" style="font-size: 20px;color: blue;text-align: center;padding: 10px">Consumer Details</th></tr>
+        <tr>
+            <th><img src="{{ consumer.photo.url }}" width="500" height="500"></th>
+            <th style="padding: 20px;color: black">
+                {{ consumer.name|capfirst }}<br>
+                {{ consumer.address|capfirst }}<br>
+                {{ consumer.con_email }}<br>
+                {{ consumer.contact }}
+            </th>
+        </tr>
+    </table>
+
+{% endblock %}

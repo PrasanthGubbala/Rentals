@@ -1,0 +1,13 @@
+{% extends 'main/common.html' %}
+{% block common %}
+    {% include 'consumer/consumer_menu.html' %}
+    <br><br><br><br>
+    <h1 style="text-align: center;font-size: 30px;color: blue">Welcome: {{ consumer.name|upper }}</h1>
+    <br><br><br><br>
+    {% if messages %}
+        {% for message in messages %}
+            <h3 style="text-align: center;background: green;color: white">{{ message }}</h3>
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}

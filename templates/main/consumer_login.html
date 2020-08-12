@@ -1,0 +1,36 @@
+{% extends 'main/common.html' %}
+{% block common %}
+    {% load static %}
+    {% include 'main/main_menu.html' %}
+    <br><br>
+
+    <form action="{% url 'consumer_login_check' %}" method="post">
+    {% csrf_token %}
+        <table align="center" border="0">
+        <tr>
+            <th><img src="{% static 'images/consumer_login.png' %}" width="400" height="400"></th>
+            <th>
+                <span style="font-size: 20px;color: blue;text-align: center"><u>Consumer SignIN</u></span><br><br><br>
+                <input type="email" placeholder="Username" required name="email"><br><br>
+                <input type="password" placeholder="Password" required name="password"><br><br>
+                <button type="submit">Login</button><br>
+                If you don't have an account?
+                <a href="{% url 'consumer_registration' %}">
+                    <u>SignUp</u>
+                </a><br><br>
+
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                           {{ message }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </th>
+        </tr>
+    </table>
+    </form>
+{% endblock %}

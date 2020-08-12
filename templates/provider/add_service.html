@@ -7,6 +7,7 @@
         <table align="center" border="1">
     <tr><th style="text-align: center;font-size: 25px;color: blue;padding: 10px">Add Your Rent-Based House</th></tr>
 
+    <tr><th><input type="hidden" name="email" value="{{ provider.email }}"></th></tr>
     <tr>
         <th>
             <select name="service_type" required >
@@ -32,7 +33,14 @@
     <tr><th><input type="text" name="street" placeholder="Street" required></th></tr>
     <tr><th><input type="text" name="door_no" placeholder="Door-number" required></th></tr>
     <tr><th><input type="file" name="image" placeholder="Upload Your House Image" required></th></tr>
-    <tr><th><button type="submit">Add House</button> </th></tr>
+    <tr><th><button type="submit">Upload to Rentals</button> </th></tr>
+
+            {% if messages %}
+                {% for message in messages %}
+                    <tr><th align="center" style="background: red;color: white">{{ message }}</th></tr>
+                {% endfor %}
+            {% endif %}
+
     </table>
     </form>
 {% endblock %}
