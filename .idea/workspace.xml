@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cd1416e-9982-4482-aa64-4f06fb7660bb" name="Default Changelist" comment="" />
+    <list default="true" id="9cd1416e-9982-4482-aa64-4f06fb7660bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,26 +44,29 @@
     <session id="2099982520">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="app_consumerdetails" value="1" />
-          <entry key="app_services" value="3" />
+          <entry key="app_services" value="4" />
           <entry key="html" value="16" />
+          <entry key="png" value="1" />
           <entry key="py" value="7" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="4" />
+          <entry key="Database Element" value="5" />
           <entry key="HTML" value="16" />
+          <entry key="Image" value="1" />
           <entry key="Python" value="7" />
           <entry key="SQL" value="1" />
         </counts>
@@ -93,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Rentals/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="775">
               <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
             </state>
           </provider>
@@ -105,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-484">
+            <state relative-caret-position="575">
               <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -114,29 +119,17 @@
                 <element signature="e#1049#1106#0" />
                 <element signature="e#1153#2132#0" />
                 <element signature="e#2184#2234#0" />
-                <element signature="e#2275#2829#0" />
-                <element signature="e#2871#2928#0" />
-                <element signature="e#2975#3946#0" />
-                <element signature="e#4001#4171#0" />
-                <element signature="e#4205#4535#0" />
-                <element signature="e#4567#4735#0" />
-                <element signature="e#4768#5530#0" />
-                <element signature="e#5567#5934#0" />
-                <element signature="e#5989#6175#0" />
-                <element signature="e#6209#6555#0" />
-                <marker date="1597254410725" expanded="true" signature="7060:7089" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/consumer/available_rental_services.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="305">
               <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
               <folding>
-                <element signature="e#388#409#0#HTML" expanded="true" />
                 <element signature="n#if#0;n#!!top" />
               </folding>
             </state>
@@ -144,9 +137,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="das://e0fc1b80-3345-4bbf-941b-0f6351698a9a/schema/main/table/app_services">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="625">
               <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
             </state>
           </provider>
@@ -198,6 +200,17 @@
               <item name="Rentals" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rentals" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Rentals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rentals" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rentals" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rentals" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="provider_photo" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -207,7 +220,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
@@ -287,11 +300,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
@@ -305,6 +318,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -327,13 +341,6 @@
     <entry file="file://$PROJECT_DIR$/../abc/Rentals/urls.py" />
     <entry file="file://$PROJECT_DIR$/../abc/app/models.py" />
     <entry file="file://$PROJECT_DIR$/../abc/app/views.py" />
-    <entry file="file://$PROJECT_DIR$/Rentals/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2925">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://e0fc1b80-3345-4bbf-941b-0f6351698a9a/schema/main/table/app_services.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -341,25 +348,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://e0fc1b80-3345-4bbf-941b-0f6351698a9a/schema/main/table/app_services">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/consumer_registration.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/provider/add_service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#table#0;n#form#0;n#!!top" />
-            <element signature="n#if#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/common.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -399,13 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://e0fc1b80-3345-4bbf-941b-0f6351698a9a/schema/main/table/app_consumerdetails">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -413,21 +399,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rentals/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/consumer_login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="e#223#1490#0#HTML" />
-            <element signature="n#if#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -435,15 +410,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="e#369#390#0#HTML" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rentals/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2925">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484">
+        <state relative-caret-position="575">
           <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -452,18 +431,14 @@
             <element signature="e#1049#1106#0" />
             <element signature="e#1153#2132#0" />
             <element signature="e#2184#2234#0" />
-            <element signature="e#2275#2829#0" />
-            <element signature="e#2871#2928#0" />
-            <element signature="e#2975#3946#0" />
-            <element signature="e#4001#4171#0" />
-            <element signature="e#4205#4535#0" />
-            <element signature="e#4567#4735#0" />
-            <element signature="e#4768#5530#0" />
-            <element signature="e#5567#5934#0" />
-            <element signature="e#5989#6175#0" />
-            <element signature="e#6209#6555#0" />
-            <marker date="1597254410725" expanded="true" signature="7060:7089" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -472,9 +447,25 @@
         <state relative-caret-position="305">
           <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
           <folding>
-            <element signature="e#388#409#0#HTML" expanded="true" />
             <element signature="n#if#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/provider_photo/consumer_login_KozL7gN.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="das://e0fc1b80-3345-4bbf-941b-0f6351698a9a/schema/main/table/app_services">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rentals/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
         </state>
       </provider>
     </entry>
